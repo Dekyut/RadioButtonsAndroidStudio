@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/page1"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:hint=" Enter Your Age"
+        android:background="#DFE8EF"
+        android:id="@+id/age"
+        android:padding="5dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="SUBMIT"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:backgroundTint="#CD1118"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:onClick="submit"/>
+</LinearLayout>

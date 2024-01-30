@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:background="#FBF8D9"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#D92C1A">
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="YOU HAVE VOTED FOR"
+                android:background="#FCF9DA"
+                android:textColor="#000000"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="3.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="President "
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/PresidentList"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vice President"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/VicePresidentList"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secretary"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/SecretaryList"
+            android:textStyle="bold"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:gravity="center"
+        android:background="#CF0E0E"
+        android:layout_weight=".5">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:text="Main Menu"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="normal|bold"
+            android:textSize="23dp"
+            android:padding="0dp"
+            android:backgroundTint="#CE0E0E"
+            android:onClick="BackToMain"
+            />
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

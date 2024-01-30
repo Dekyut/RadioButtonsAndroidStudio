@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/page2"
+    tools:context=".VotingActivity">
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRESIDENT"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPresident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonPresident1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leni Robredo" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPresident2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Derek Honrubia" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VICE PRESIDENT"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupVicePresident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonVicePresident1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zab Tumang" />
+
+        <RadioButton
+            android:id="@+id/radioButtonVicePresident2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tristan Cura" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SECRETARY"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSecretary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonSecretary1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Richard Meneses" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSecretary2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marc Castro" />
+    </RadioGroup>
+
+
+
+    <!-- Similar changes for VICE PRESIDENT and SECRETARY radio groups -->
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="3dp"
+        android:text="SUBMIT"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:backgroundTint="#D82C1A"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        android:onClick="submitvote" />
+</LinearLayout>
